@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, Segment, Image, Button,Icon } from "semantic-ui-react";
+import { Menu, Image, Button,Icon } from "semantic-ui-react";
 import { connect } from "react-redux";
 import "./App.css";
 import { setAuthedUser } from "../actions/authUser";
@@ -14,8 +14,8 @@ class NavBar extends Component {
   render() {
     const { authUser, users } = this.props;
     return (
-      <Segment inverted>
-        <Menu inverted pointing secondary>
+      <div>
+        <Menu pointing>
           <Menu.Item  as={NavLink} exact to='/' name="home" />
           <Menu.Item  as={NavLink} to='/add' name="new question" />
           <Menu.Item as={NavLink} to='/leaderboard' name="leaderboard" />
@@ -41,7 +41,7 @@ class NavBar extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Menu>
-      </Segment>
+      </div>
     );
   }
 }

@@ -28,13 +28,12 @@ class Login extends Component {
         <div className="App">
         {userIds.length === 0 ? <LoadingBar style={{ backgroundColor: '#780743', height: '5px' }}/>:(
         <Card>
-          <Card.Header>Would You Rather?</Card.Header>
-          <Card.Img src="../images/logo.svg" className="App-logo"/>
+          <Card.Header className="card-header">Would You Rather?</Card.Header>
           <Card.Body>
             <Card.Title>Sign in</Card.Title>
             <form onSubmit={this.handleSubmit}>
               <select className="dropdown" value={userId} onChange={this.handleChange}>
-                <option value="default" disabled>Select User..</option>
+                <option value="default" disabled>Select User</option>
                 {this.props.userIds.map((id) => {
                   return <option key={id} value={id}>{users[id].name}</option>;
                 })}

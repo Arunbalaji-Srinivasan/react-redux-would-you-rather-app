@@ -15,7 +15,7 @@
 
 .dropdown{ 
   padding: 8px 16px;
-  width: 250px;
+  width: 200px;
   margin-top: 20px;
   cursor: pointer;
   border-left: 4px solid #739cda;
@@ -23,9 +23,13 @@
   font-weight: bold;
 }
 
+.card-header{
+  font-size: large;
+  font-weight: bolder;
+}
 .card{
   margin: auto;
-  margin-top:70px;
+  margin-top:200px;
   width: 400px; 
   padding: 30px 80px 50px 80px;
 }
