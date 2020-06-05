@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import { Card, Button, Form,Divider } from "semantic-ui-react";
 import { handleAddQuestion } from "../actions/questions";
 import {connect} from 'react-redux'
-import {handleUpdateUserData} from '../actions/users'
+
 
 class NewQuestion extends Component {
     state = {
@@ -21,7 +21,6 @@ class NewQuestion extends Component {
                 optionTwo,
                 authUser
             }))
-            dispatch(handleUpdateUserData())
         }
         history.push('/')
     }

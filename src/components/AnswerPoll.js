@@ -22,7 +22,7 @@ class AnswerPoll extends Component {
     const {selectedValue} = this.state
     if(selectedValue!==null){
       dispatch(handleAddAnswer({authUser,answer:selectedValue,question_id}))
-      dispatch(handleUpdateUserData())
+      dispatch(handleUpdateUserData(authUser, question_id, selectedValue))
     }
     
   }
