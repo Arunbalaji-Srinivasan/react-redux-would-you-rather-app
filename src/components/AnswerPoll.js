@@ -102,13 +102,14 @@ class AnswerPoll extends Component {
               {optionOneAnswer && <Label color='red' ribbon='right'>Your Vote</Label>}
                 <Message.Header style={{marginBottom:'15px'}}>{question.optionOne.text}</Message.Header>
                 <Progress value={votesforOptionOne} total={totalVotes} color='teal' size='medium'/>
-                <Message.Header style={{color:'black',textAlign:'center',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>{votesforOptionOne} out of {totalVotes} votes</Message.Header>
+                <Message.Header style={{color:'black',textAlign:'center',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>{votesforOptionOne} out of {totalVotes} votes ({Math.round((votesforOptionOne / totalVotes) * 100)}%)</Message.Header>
             </Message>
             <Message style={{backgroundColor:optionTwoAnswer===true ? '#FAEBD7':'#F8F8F8'}}>
               {optionTwoAnswer && <Label color='red' ribbon='right'>Your Vote</Label> }
                 <Message.Header  style={{marginBottom:'15px'}}> {question.optionTwo.text}</Message.Header>
                 <Progress value={votesforOptionTwo} total={totalVotes} color='teal'size='medium'  />
-                <Message.Header style={{color:'black',textAlign:'center',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>{votesforOptionTwo} out of {totalVotes} votes</Message.Header>
+                
+                <Message.Header style={{color:'black',textAlign:'center',fontFamily: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif'}}>{votesforOptionTwo} out of {totalVotes} votes ({Math.round((votesforOptionTwo / totalVotes) * 100)}%)</Message.Header>
             </Message>
                 
               </Card.Description>

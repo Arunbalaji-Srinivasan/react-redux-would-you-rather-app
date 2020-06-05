@@ -9,6 +9,7 @@ import AnswerPoll from "./AnswerPoll";
 import NewQuestion from "./NewQuestion"
 import Leaderboard from "./Leaderboard";
 import PrivateRoute from './PrivateRoute'
+import NotFound from './NotFound'
 
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
 									<PrivateRoute path='/add' exact component={NewQuestion} />
 									<PrivateRoute path='/question/:id'exact component={AnswerPoll} />
 									<PrivateRoute path='/leaderboard' component={Leaderboard} />
+                  <Route component={NotFound} />
 								</Switch>
            </div>
       </Router>   
