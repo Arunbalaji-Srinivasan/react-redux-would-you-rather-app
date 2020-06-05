@@ -5,6 +5,7 @@ import { Image, Button, Card, Checkbox,Message,Progress,Label} from "semantic-ui
 import { handleAddAnswer } from "../actions/questions";
 import LoadingBar from 'react-redux-loading-bar';
 import {handleUpdateUserData} from '../actions/users'
+import NotFound from "./NotFound";
 
 
 class AnswerPoll extends Component {
@@ -27,7 +28,13 @@ class AnswerPoll extends Component {
     
   }
   render() {
-    const { isAnswered, question, author,authUser} = this.props;
+    const { isAnswered, question, author,authUser,wrongQuestion} = this.props;
+    if (wrongQuestion) {
+      return (
+        <NotFound/>
+      )
+    }
+
     const totalVotes = question.optionOne.votes.length + question.optionTwo.votes.length
     const votesforOptionOne = question.optionOne.votes.length
     const votesforOptionTwo = question.optionTwo.votes.length
@@ -124,17 +131,24 @@ class AnswerPoll extends Component {
 function mapStateToProps({ questions, users, authUser }, { match }) {
   const question_id = match.params.id;
   const question = questions[question_id];
-  const author = users[question.author];
-  let isAnswered = false;
-  if (
-    question.optionOne.votes.includes(authUser) ||
-    question.optionTwo.votes.includes(authUser)
-  ) {
-    isAnswered = true;
+  let author,isAnswered,wrongQuestion
+  if(question!==undefined){
+    author = users[question.author];
+    wrongQuestion =  false
+    isAnswered = false;
+    if (
+      question.optionOne.votes.includes(authUser) ||
+      question.optionTwo.votes.includes(authUser)
+    ) {
+      isAnswered = true;
+    }
+  }else{
+    wrongQuestion = true;
   }
   return {
     question,
     isAnswered,
+    wrongQuestion,
     author,
     authUser,
     question_id

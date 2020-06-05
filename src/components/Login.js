@@ -4,7 +4,7 @@ import "./App.css";
 import { Card } from "react-bootstrap";
 import LoadingBar from 'react-redux-loading-bar';
 import { setAuthedUser } from "../actions/authUser";
-import { Redirect } from "react-router-dom";
+import { Redirect,withRouter } from "react-router-dom";
 
 
 class Login extends Component {
@@ -20,8 +20,9 @@ class Login extends Component {
   }
   render() {
      const{userIds,authUser,users} = this.props
+     const { from } = this.props.location.state || { from: { pathname: '/home'}}
      if(authUser!==null){
-       return <Redirect to='/home'/>
+       return <Redirect to={from}/>
      }
      const userId = this.state.selectedUser!==''?this.state.selectedUser:'default'
     return (
@@ -52,4 +53,4 @@ function mapStateToProps({ users,authUser }) {
   return { userIds: Object.keys(users),authUser,users };
 }
 
-export default connect(mapStateToProps)(Login);
+export default withRouter(connect(mapStateToProps)(Login));
