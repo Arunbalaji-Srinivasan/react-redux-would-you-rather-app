@@ -1,5 +1,5 @@
 {
-  "homepage": "http://arunbalaji-srinivasan.github.io/react-redux-would-you-rather-app"
+  "homepage": "http://arunbalaji-srinivasan.github.io/react-redux-would-you-rather-app",
   "name": "would_you_rather",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,6 +46,5 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC",
-  "homepage": "http://arunbalaji-srinivasan.github.io/react-redux-would-you-rather-app"
+  "license": "ISC"
 }
