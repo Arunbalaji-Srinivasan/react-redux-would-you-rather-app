@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b90e6d07fd6beae0dd862779185ba13",
+    "revision": "0dea4cb9b05693e33e7e333c2ea95f11",
     "url": "/react-redux-would-you-rather-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-redux-would-you-rather-app/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "3453c3f9bf93570c9568",
+    "revision": "0954fe72311e03a71f65",
     "url": "/react-redux-would-you-rather-app/static/css/main.6452fb3e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-redux-would-you-rather-app/static/js/2.70a1828e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3453c3f9bf93570c9568",
-    "url": "/react-redux-would-you-rather-app/static/js/main.2a75c392.chunk.js"
+    "revision": "0954fe72311e03a71f65",
+    "url": "/react-redux-would-you-rather-app/static/js/main.bd8a0e77.chunk.js"
   },
   {
     "revision": "f19c28b70a20b1e149f7",

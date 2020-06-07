@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-redux-would-you-rather-app/static/css/main.6452fb3e.chunk.css",
-    "main.js": "/react-redux-would-you-rather-app/static/js/main.2a75c392.chunk.js",
-    "main.js.map": "/react-redux-would-you-rather-app/static/js/main.2a75c392.chunk.js.map",
+    "main.js": "/react-redux-would-you-rather-app/static/js/main.bd8a0e77.chunk.js",
+    "main.js.map": "/react-redux-would-you-rather-app/static/js/main.bd8a0e77.chunk.js.map",
     "runtime-main.js": "/react-redux-would-you-rather-app/static/js/runtime-main.a7f11f63.js",
     "runtime-main.js.map": "/react-redux-would-you-rather-app/static/js/runtime-main.a7f11f63.js.map",
     "static/css/2.af3c1da9.chunk.css": "/react-redux-would-you-rather-app/static/css/2.af3c1da9.chunk.css",
     "static/js/2.70a1828e.chunk.js": "/react-redux-would-you-rather-app/static/js/2.70a1828e.chunk.js",
     "static/js/2.70a1828e.chunk.js.map": "/react-redux-would-you-rather-app/static/js/2.70a1828e.chunk.js.map",
     "index.html": "/react-redux-would-you-rather-app/index.html",
-    "precache-manifest.1b24f64e495050b297476b48482a967d.js": "/react-redux-would-you-rather-app/precache-manifest.1b24f64e495050b297476b48482a967d.js",
+    "precache-manifest.00d51f665b27b2b30051d215d2fa1339.js": "/react-redux-would-you-rather-app/precache-manifest.00d51f665b27b2b30051d215d2fa1339.js",
     "service-worker.js": "/react-redux-would-you-rather-app/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/react-redux-would-you-rather-app/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.6452fb3e.chunk.css.map": "/react-redux-would-you-rather-app/static/css/main.6452fb3e.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.70a1828e.chunk.js",
     "static/css/main.6452fb3e.chunk.css",
-    "static/js/main.2a75c392.chunk.js"
+    "static/js/main.bd8a0e77.chunk.js"
   ]
 }
