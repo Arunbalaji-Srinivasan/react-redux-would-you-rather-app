@@ -1,38 +1,15 @@
 let users = {
-    sarahedo: {
-      id: 'sarahedo',
-      name: 'Sarah Edo',
-      avatarURL: 'https://tylermcginnis.com/would-you-rather/sarah.jpg',
-      answers: {
-        "8xf0y6ziyjabvozdd253nd": 'optionOne',
-        "6ni6ok3ym7mf1p33lnez": 'optionTwo',
-        "am8ehyc8byjqgar0jgpub9": 'optionTwo',
-        "loxhs1bqm25b708cmbf3g": 'optionTwo'
-      },
-      questions: ['8xf0y6ziyjabvozdd253nd', 'am8ehyc8byjqgar0jgpub9']
-    },
+    
     tylermcginnis: {
       id: 'tylermcginnis',
       name: 'Tyler McGinnis',
-      avatarURL: "https://tylermcginnis.com/would-you-rather/tyler.jpg",
+      avatarURL: 'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
       answers: {
         "vthrdm985a262al8qx3do": 'optionOne',
         "xj352vofupe1dqz9emx13r": 'optionTwo',
       },
       questions: ['loxhs1bqm25b708cmbf3g', 'vthrdm985a262al8qx3do'],
     },
-    johndoe: {
-      id: 'johndoe',
-      name: 'John Doe',
-      avatarURL: "https://tylermcginnis.com/would-you-rather/dan.jpg",
-      answers: {
-        "xj352vofupe1dqz9emx13r": 'optionOne',
-        "vthrdm985a262al8qx3do": 'optionTwo',
-        "6ni6ok3ym7mf1p33lnez": 'optionTwo'
-      },
-      questions: ['6ni6ok3ym7mf1p33lnez', 'xj352vofupe1dqz9emx13r'],
-    }
-  }
   
   let questions = {
     "8xf0y6ziyjabvozdd253nd": {
