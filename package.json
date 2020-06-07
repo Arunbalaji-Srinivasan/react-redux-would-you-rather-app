@@ -43,5 +43,6 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "http://arunbalaji-srinivasan.github.io/react-redux-would-you-rather-app"
 }
